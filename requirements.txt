@@ -1,0 +1,12 @@
+# Core packages
+numpy
+pandas
+matplotlib
+seaborn
+jupyter
+
+opencv-python
+tensorflow-macos
+tensorflow-metal
+mediapipe
+sklearn
