@@ -17,7 +17,7 @@ We use American Sign Language (ASL) for this project but it can be reused to tra
 Tensorflow
 
 Open CV: to work easily with our webcam
-Mediapipe: to extract keypoints from a human
+Mediapipe: to extract keypoints from a human body in real time
 
 
 
@@ -25,6 +25,14 @@ Mediapipe: to extract keypoints from a human
 
 ## 1. 💽 Data collection
 
-We use a large-scale dataset for Word-Level American Sign Language: https://github.com/dxli94/WLASL
+We first considered a large-scale dataset for Word-Level American Sign Language: https://github.com/dxli94/WLASL - but since we used a reduced scope of 9 words to translate for this project, we generated our own dataset with our own videos.
 
-Does it have all the words needed???
+!!! Describe number of videos per words + nb of frames
+
+## 2. Training the LSTM neural network
+
+
+## 3. Evaluation and test in real time
+
+
+## 4. Convert model to Tensorflow JS
