@@ -3,6 +3,10 @@
 70 millions people in the world are considered functionally deaf.
 The vast majority of health practicioners do not speak sign languages. Communications with deaf patients is a struggle.
 
+<br/>
+<br/>
+
+
 
 # 💡 Solution
 
@@ -11,16 +15,25 @@ Our model is trained on the most common symptoms that doctors and nurses may fac
 
 We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
 
+<br/>
+<br/>
+
 
 # 🤖 Stack overview
 
 
-Open CV: to work easily with our webcam to generat our dataset
-Mediapipe: Google library to extract keypoints from a human body in real time
-Tensorflow: for building and training our models
-Tensorflow JS: for converting to layer model or graph model and use in a JavaScript application
-Numpy: classic for dealing with data extraction and pre-processing
+**Open CV**: to work easily with our webcam to generat our dataset
 
+**Mediapipe**: Google library to extract keypoints from a human body in real time
+
+**Tensorflow**: for building and training our models
+
+**Tensorflow JS**: for converting to layer model or graph model and use in a JavaScript application
+
+**Numpy**: classic for dealing with data extraction and pre-processing
+
+<br/>
+<br/>
 
 # 🪜 Project steps
 
@@ -30,32 +43,68 @@ We first considered a large-scale dataset for Word-Level American Sign Language:
 
 We have collected 30 videos of 30 frames for each word. It means in total our model will be trained on 9 * 30 * 30 👉 **81.000 frames**
 
+<br/>
 
-## 1. 💽 Data preprocessing
+
+## 2. 💽 Data preprocessing
 
 We've saved each frame of each video as a numpy array of size (,1662). It means that for each frame, there is a total of **1662 keypoint values**.
 
+We use a 10% test split which means we end up with
+
 💡 Tip: if using Google Colab for training, you must zip and unzip the data before in order to allow for 10x faster processing with Numpy.
 
-
-## 2. ⏳ Training an LSTM neural network
-
-## 2. 🧠 Training a CNN + LSTM neural network
+<br/>
 
 
+## 3. ⏳ Training an LSTM neural network
 
-## 3. 📽 Evaluation and test in real time
+We used a variety of architectures for the LSTM neural network. The one that yielded the best results was the following:
+
+
+Considering we had a small dataset to train on (30 videos for each class).
+
+<br/>
+
+
+## 4. 🧠 Training a CNN + LSTM neural network
+
+Many research papers working on sign languages seem to support that state-of-the-art models use a combination of CNN layers followed by a number of LSTM layers.
+
+The issues with this architecture are:
+
+1. It requires a much larger volume of data to train on (as is typically the case with large neural networks). Considering we generated our own dataset and only had 30 videos per class - our model performed quite poorly in real life.
+2. It would result in a much denser neural network (20m+ parameters) which meant much longer training time
+3. A much complex network means inference would take longer once converted to Tensorflow JS - which is a matter of concern for us since we are trying to make detections in real-time on a video feed.
+
+
+<br/>
+
+
+## 5. 📽 Evaluation and test in real time
 
 We logged metrics from our model and displayed them in Tensorboard.
 
-## 3. 🚲 Lifecycle setup
+
+<br/>
+
+
+## 6. 🚲 Lifecycle setup
 
 
 
-## 4. 🌟 Convert model to Tensorflow JS
+
+<br/>
+
+
+
+## 7. 🌟 Convert model to Tensorflow JS
 
 Depending on the type of model built, we converted our .h5 Keras model to a layers model or graph model.
 
 LSTM 👉 layers model
 
 CNN + LSTM 👉 graph model
+
+
+<br/>
