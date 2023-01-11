@@ -90,12 +90,12 @@ The issues with this architecture are:
 We logged metrics from our model and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
 
 
-
 <br/>
 
 
 ## 6. 🚲 Lifecycle setup
 
+We use Weights & Biases to keep track of our training metrics. We dump the Tensorflow files after training using the WandB API and display the Tensorboard dashboards.
 
 
 
