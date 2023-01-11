@@ -17,7 +17,10 @@ Our model is trained on the most common symptoms that doctors and nurses may fac
 
 We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
 
+
  <img src="imgs/sign_language_2.png" width="360" />
+
+ <img src="imgs/image3.gif" width="500" />
 
 <br/>
 
