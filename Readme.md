@@ -87,6 +87,8 @@ The issues with this architecture are:
 
 ## 5. 📽 Evaluation and test in real time
 
+Both LSTM and CNN+LSTM models provided good categorical accuracy (95%+) but when tested in real time, the LSTM performed better and seem to
+
 We logged metrics from our model and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
 
 
