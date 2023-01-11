@@ -3,10 +3,12 @@
 70 millions people in the world are considered functionally deaf.
 The vast majority of health practicioners do not speak sign languages. Communications with deaf patients is a struggle.
 
-<br/>
-<br/>
+  <img src="imgs/sign_language_1.png" width="250" />
+  <img src="imgs/sign_language_3.jpeg" width="220" />
 
 
+<br/>
+<br/>
 
 # 💡 Solution
 
@@ -14,6 +16,8 @@ Sign language detector for medical practitioner to help them understand symptoms
 Our model is trained on the most common symptoms that doctors and nurses may face on a daily basis.
 
 We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
+
+ <img src="imgs/sign_language_2.png" width="300" />
 
 <br/>
 <br/>
@@ -87,9 +91,9 @@ The issues with this architecture are:
 
 ## 5. 📽 Evaluation and test in real time
 
-Both LSTM and CNN+LSTM models provided good categorical accuracy (95%+) but when tested in real time, the LSTM performed better and seem to
+Both LSTM and CNN+LSTM models provided good categorical accuracy (95%+) but when tested in real time, the LSTM models would perform better and seemed to generalize better to real-time detection.
 
-We logged metrics from our model and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
+We logged metrics from our models and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
 
 
 <br/>
@@ -97,9 +101,7 @@ We logged metrics from our model and displayed them in Tensorboard. Scripts are 
 
 ## 6. 🚲 Lifecycle setup
 
-We use Weights & Biases to keep track of our training metrics. We dump the Tensorflow files after training using the WandB API and display the Tensorboard dashboards.
-
-
+We use Weights & Biases to keep track of our training metrics. We dump the Tensorflow files after training using the WandB API and the Tensorboard dashboards can be found there.
 
 <br/>
 
@@ -113,5 +115,6 @@ LSTM 👉 layers model
 
 CNN + LSTM 👉 graph model
 
+💡 Tip: the shape of the input for your model will differ whether you load a layer or graph model - make the necessary reshaping in your JavaScript code.
 
 <br/>
