@@ -22,7 +22,6 @@ Tensorflow JS: for converting to layer model or graph model and use in a JavaScr
 Numpy: classic for dealing with data extraction and pre-processing
 
 
-
 # 🪜 Project steps
 
 ## 1. 💽 Data collection
@@ -31,10 +30,20 @@ We first considered a large-scale dataset for Word-Level American Sign Language:
 
 !!! Describe number of videos per words + nb of frames
 
-## 2. Training the LSTM neural network
+## 2. Training an LSTM neural network
+
+## 2. Training a CNN + LSTM neural network
+
 
 
 ## 3. Evaluation and test in real time
 
+We logged metrics from our model and displayed them in Tensorboard.
+
 
 ## 4. Convert model to Tensorflow JS
+
+Depending on the type of model built, we converted our .h5 Keras model to a layers model or graph model.
+
+LSTM 👉 layers model
+CNN + LSTM 👉 graph model
