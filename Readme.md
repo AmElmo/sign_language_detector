@@ -12,8 +12,10 @@ The vast majority of health practicioners do not speak sign languages. Communica
 
 # 💡 Solution
 
-Sign language detector for medical practitioner to help them understand symptoms from hearing-impaired patients.
+Sign language detector for medical practitioners to help them understand symptoms from hearing-impaired patients.
 Our model is trained on the most common symptoms that doctors and nurses may face on a daily basis.
+
+The current version covers 9 symptoms (9 classes) but could easily be extended.
 
 We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
 
