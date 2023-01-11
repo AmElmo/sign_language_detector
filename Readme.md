@@ -28,12 +28,12 @@ Numpy: classic for dealing with data extraction and pre-processing
 
 We first considered a large-scale dataset for Word-Level American Sign Language: https://github.com/dxli94/WLASL - but since we used a reduced scope of 9 words to translate for this project, we generated our own dataset with our own videos.
 
-We have collected 30 videos of 30 frames for each word.
+We have collected 30 videos of 30 frames for each word. It means in total our model will be trained on 9 * 30 * 30 👉 **81.000 frames**
 
 
 ## 1. 💽 Data preprocessing
 
-We've saved each frame of each video as a numpy array of size
+We've saved each frame of each video as a numpy array of size (,1662). It means that for each frame, there is a total of **1662 keypoint values**.
 
 💡 Tip: if using Google Colab for training, you must zip and unzip the data before in order to allow for 10x faster processing with Numpy.
 
