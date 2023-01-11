@@ -3,9 +3,10 @@
 70 millions people in the world are considered functionally deaf.
 The vast majority of health practicioners do not speak sign languages. Communications with deaf patients is a struggle.
 
-  <img src="imgs/sign_language_1.png" width="250" />
-  <img src="imgs/sign_language_3.jpeg" width="220" />
-
+<p float="left">
+  <img src="imgs/sign_language_1.png" width="300" />
+  <img src="imgs/sign_language_3.jpeg" width="250" />
+</p>
 
 <br/>
 <br/>
@@ -17,7 +18,7 @@ Our model is trained on the most common symptoms that doctors and nurses may fac
 
 We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
 
- <img src="imgs/sign_language_2.png" width="300" />
+ <img src="imgs/sign_language_2.png" width="360" />
 
 <br/>
 <br/>
