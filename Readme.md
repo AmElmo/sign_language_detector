@@ -1,3 +1,8 @@
+✨ Live demo: https://sign-language-translator.onrender.com
+📁 Dedicated repository for production: https://github.com/AmElmo/sign_language_detector_production
+📊 Metrics dashboards (see Tensorboard): https://wandb.ai/amelmo/Sign_Language_Detector?workspace
+
+
 # 🤔 Problem
 
 70 millions people in the world are considered functionally deaf.
