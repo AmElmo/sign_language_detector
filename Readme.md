@@ -7,17 +7,19 @@ The vast majority of health practicioners do not speak sign languages. Communica
 # 💡 Solution
 
 Sign language detector for medical practitioner to help them understand symptoms from hearing-impaired patients.
-Our model is trained on the most common symptoms that doctors and nurses face on a daily basis.
+Our model is trained on the most common symptoms that doctors and nurses may face on a daily basis.
 
-We use American Sign Language (ASL) for this project but it can be reused to train on any form of sign language.
+We use American Sign Language (ASL) for this project but the code can be reused to train on any form of sign language.
 
 
 # 🤖 Stack overview
 
-Tensorflow
 
-Open CV: to work easily with our webcam
-Mediapipe: to extract keypoints from a human body in real time
+Open CV: to work easily with our webcam to generat our dataset
+Mediapipe: Google library to extract keypoints from a human body in real time
+Tensorflow: for building and training our models
+Tensorflow JS: for converting to layer model or graph model and use in a JavaScript application
+Numpy: classic for dealing with data extraction and pre-processing
 
 
 
