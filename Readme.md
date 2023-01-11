@@ -9,7 +9,6 @@ The vast majority of health practicioners do not speak sign languages. Communica
 </p>
 
 <br/>
-<br/>
 
 # 💡 Solution
 
@@ -20,7 +19,6 @@ We use American Sign Language (ASL) for this project but the code can be reused 
 
  <img src="imgs/sign_language_2.png" width="360" />
 
-<br/>
 <br/>
 
 
@@ -37,7 +35,6 @@ We use American Sign Language (ASL) for this project but the code can be reused 
 
 **Numpy**: classic for dealing with data extraction and pre-processing
 
-<br/>
 <br/>
 
 # 🪜 Project steps
