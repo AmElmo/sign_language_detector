@@ -57,7 +57,7 @@ We have collected 30 videos of 30 frames for each word. It means in total our mo
 
 We've saved each frame of each video as a numpy array of size (,1662). It means that for each frame, there is a total of **1662 keypoint values**. They cover both hands, arms and the face (holistic).
 
-We use a 10% test split which means we end up with
+We use a 5% test split (since we have a small dataset) which means we end up with 256 videos for training and 14 videos in our testing set.
 
 💡 Tip: if using Google Colab for training, you must zip and unzip the data before in order to allow for 10x faster processing with Numpy.
 
@@ -73,21 +73,22 @@ We used a variety of architectures for the LSTM neural network. The one that yie
 3 LSTM layers followed by 2 dense layers before the output layer.
 
 
-Considering we had a small dataset to train on (30 videos for each class).
+Considering we had a small dataset to train on (30 videos for each class), this model seemed to perform best.
 
 <br/>
 
 
 ## 4. 🧠 Training a CNN + LSTM neural network
 
-Many research papers working on sign languages seem to support that state-of-the-art models use a combination of CNN layers followed by a number of LSTM layers.
+Many research papers working on sign languages seem to support that state-of-the-art models use a combination of CNN layers followed by a number of LSTM layers. We have trained such model using ConvLSTM1D from the Tensorflow library (see notebook) but it did not generalize well to real-time detection.
 
 The issues with this architecture are:
 
 1. It requires a much larger volume of data to train on (as is typically the case with large neural networks). Considering we generated our own dataset and only had 30 videos per class - our model performed quite poorly in real life.
-2. It would result in a much denser neural network (20m+ parameters) which meant much longer training time
+2. It would result in a much denser neural network (20m+ parameters) which meant much longer training times. Though it would be acceptable if we expected good generalization in the end.
 3. A much complex network means inference would take longer once converted to Tensorflow JS - which is a matter of concern for us since we are trying to make detections in real-time on a video feed.
 
+Number 1 is the main reason why we chose not to use this model in production.
 
 <br/>
 
