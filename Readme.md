@@ -28,20 +28,31 @@ Numpy: classic for dealing with data extraction and pre-processing
 
 We first considered a large-scale dataset for Word-Level American Sign Language: https://github.com/dxli94/WLASL - but since we used a reduced scope of 9 words to translate for this project, we generated our own dataset with our own videos.
 
-!!! Describe number of videos per words + nb of frames
-
-## 2. Training an LSTM neural network
-
-## 2. Training a CNN + LSTM neural network
+We have collected 30 videos of 30 frames for each word.
 
 
+## 1. 💽 Data preprocessing
 
-## 3. Evaluation and test in real time
+We've saved each frame of each video as a numpy array of size
+
+💡 Tip: if using Google Colab for training, you must zip and unzip the data before in order to allow for 10x faster processing with Numpy.
+
+
+## 2. ⏳ Training an LSTM neural network
+
+## 2. 🧠 Training a CNN + LSTM neural network
+
+
+
+## 3. 📽 Evaluation and test in real time
 
 We logged metrics from our model and displayed them in Tensorboard.
 
+## 3. 🚲 Lifecycle setup
 
-## 4. Convert model to Tensorflow JS
+
+
+## 4. 🌟 Convert model to Tensorflow JS
 
 Depending on the type of model built, we converted our .h5 Keras model to a layers model or graph model.
 
