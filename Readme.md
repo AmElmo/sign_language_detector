@@ -61,6 +61,10 @@ We use a 10% test split which means we end up with
 
 We used a variety of architectures for the LSTM neural network. The one that yielded the best results was the following:
 
+<img src="lstm_model.png" width="300" />
+
+3 LSTM layers followed by 2 dense layers before the output layer.
+
 
 Considering we had a small dataset to train on (30 videos for each class).
 
@@ -83,7 +87,8 @@ The issues with this architecture are:
 
 ## 5. 📽 Evaluation and test in real time
 
-We logged metrics from our model and displayed them in Tensorboard.
+We logged metrics from our model and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
+
 
 
 <br/>
