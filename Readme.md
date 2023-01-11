@@ -20,7 +20,7 @@ We use American Sign Language (ASL) for this project but the code can be reused 
 
  <img src="imgs/sign_language_2.png" width="360" />
 
- <img src="imgs/image3.gif" width="500" />
+ <img src="imgs/image3.gif" width="650" />
 
 <br/>
 
