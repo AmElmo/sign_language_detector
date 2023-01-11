@@ -46,4 +46,5 @@ We logged metrics from our model and displayed them in Tensorboard.
 Depending on the type of model built, we converted our .h5 Keras model to a layers model or graph model.
 
 LSTM 👉 layers model
+
 CNN + LSTM 👉 graph model
