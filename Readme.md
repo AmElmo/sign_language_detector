@@ -55,7 +55,7 @@ We have collected 30 videos of 30 frames for each word. It means in total our mo
 
 ## 2. 💽 Data preprocessing
 
-We've saved each frame of each video as a numpy array of size (,1662). It means that for each frame, there is a total of **1662 keypoint values**.
+We've saved each frame of each video as a numpy array of size (,1662). It means that for each frame, there is a total of **1662 keypoint values**. They cover both hands, arms and the face (holistic).
 
 We use a 10% test split which means we end up with
 
