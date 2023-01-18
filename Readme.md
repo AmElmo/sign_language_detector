@@ -1,5 +1,7 @@
 ✨ Live demo: https://sign-language-translator.onrender.com
+<br/>
 📁 Dedicated repository for production: https://github.com/AmElmo/sign_language_detector_production
+<br/>
 📊 Metrics dashboards (see Tensorboard): https://wandb.ai/amelmo/Sign_Language_Detector?workspace
 
 
