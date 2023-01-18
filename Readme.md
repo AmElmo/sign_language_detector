@@ -75,7 +75,7 @@ We use a 5% test split (since we have a small dataset) which means we end up wit
 
 We used a variety of architectures for the LSTM neural network. The one that yielded the best results was the following:
 
-<img src="lstm_model.png" width="300" />
+<img src="imgs/lstm_model.png" width="300" />
 
 3 LSTM layers followed by 2 dense layers before the output layer.
 
