@@ -93,7 +93,7 @@ The issues with this architecture are:
 
 1. It requires a much larger volume of data to train on (as is typically the case with large neural networks). Considering we generated our own dataset and only had 30 videos per class - our model performed quite poorly in real life.
 2. It would result in a much denser neural network (20m+ parameters) which meant much longer training times. Though it would be acceptable if we expected good generalization in the end.
-3. A much complex network means inference would take longer once converted to Tensorflow JS - which is a matter of concern for us since we are trying to make detections in real-time on a video feed.
+3. A more complex network means inference would take longer to infer once converted to Tensorflow JS - which is a matter of concern for us since we are trying to make detections in real-time on a video feed.
 
 Number 1 is the main reason why we chose not to use this model in production.
 
