@@ -114,6 +114,8 @@ We logged metrics from our models and displayed them in Tensorboard. Scripts are
 
 We use Weights & Biases to keep track of our training metrics. We dump the Tensorflow files after training using the WandB API and the Tensorboard dashboards can be found there.
 
+See dashboards for the 3 models trained: https://wandb.ai/amelmo/Trash-Detector-Wall-E
+
 <br/>
 
 
