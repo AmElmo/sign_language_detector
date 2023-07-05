@@ -106,6 +106,8 @@ Both LSTM and CNN+LSTM models provided good categorical accuracy (95%+) but when
 
 We logged metrics from our models and displayed them in Tensorboard. Scripts are available in the notebook in order to test your model in real-time using your webcam before diving into the production side.
 
+⚠️ We noticed in production that one class was harder to predict among the 9 different classes ("fever"). We should probably train the model a little longer on a larger dataset (50 - 60 videos per class, instead of 30 currently) or change the architecture to get better results. Most likely adding more videos will work best.
+
 
 <br/>
 
